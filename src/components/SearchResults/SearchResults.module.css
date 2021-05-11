@@ -1,0 +1,92 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.back_btn_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.back_btn_wrapper p {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5em;
+}
+.back_button {
+  color: #fff;
+  font-size: 1.6em;
+  margin-left: 0.5em;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+}
+.header h1 {
+  font-size: 1.3em;
+  margin: 1em 0px -3.3em 0px;
+
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.movie_card {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  background: rgb(71, 71, 71);
+  margin: 1em 2em;
+  border-radius: 6px;
+}
+.movie_poster {
+  height: 400px;
+  background: #000;
+  border-radius: 6px;
+}
+.movie_poster img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+.movie_details {
+  border-radius: 6px;
+  margin: 4%;
+}
+.movie_details p {
+  font-size: 1.1em;
+  margin: 1%;
+  text-align: left;
+}
+.movie_details h5 {
+  font-size: 0.8em;
+  color: rgb(207, 207, 207);
+  font-weight: 400;
+  margin: 1%;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    margin: 1em 0em -2em 68px;
+    font-size: 2em;
+    text-align: left;
+  }
+}

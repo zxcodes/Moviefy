@@ -20,4 +20,4 @@ npm start
 * When a Movie is not found
 ![image](https://user-images.githubusercontent.com/44538497/117832844-7783e000-b293-11eb-83c3-3616d16c76db.png)
 
-# Open to suggestions & contributions. Feel free to check out the code and don't forget to star the repo.:star:
+* Open to suggestions & contributions. Feel free to check out the code and don't forget to star the repo.:star:

@@ -1,12 +1,23 @@
-# Moviefy
+# Moviefy: A Movie Search App with React.
+
  # Getting Started
  ```
-Clone the repository
+Clone the repository and:
 cd Moviefy
 npm start
 ```
-# Additional NPM Modules (Required):
+# NPM Modules (Required):
 * react-error-boundnary
 * React Icons
 
-* Feel free to check out the code and don't forget to star the repo.
+# Screenshots
+* Homepage
+ ![image](https://user-images.githubusercontent.com/44538497/117832437-1a882a00-b293-11eb-81f1-30fd9bc713cd.png)
+
+* Movie Results Page
+![image](https://user-images.githubusercontent.com/44538497/117832612-41466080-b293-11eb-8987-43d948f5e2d5.png)
+
+* When a Movie is not found
+![image](https://user-images.githubusercontent.com/44538497/117832844-7783e000-b293-11eb-83c3-3616d16c76db.png)
+
+* Open to suggestions & contributions. Feel free to check out the code and don't forget to star the repo.:star:

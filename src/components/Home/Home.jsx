@@ -23,7 +23,7 @@ function Home() {
         <span className={styles.span}>
           <div className={styles.header_wrapper}>
             <header>Moviefy</header>
-            <a href="https://github.com/zxcodes">
+            <a href="https://github.com/zxcodes/Moviefy">
               <GoMarkGithub className={styles.github} />
             </a>
           </div>

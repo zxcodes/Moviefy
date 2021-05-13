@@ -4,6 +4,7 @@
  ```
 Clone the repository and:
 cd Moviefy
+npm install
 npm start
 ```
 # NPM Modules (Required):

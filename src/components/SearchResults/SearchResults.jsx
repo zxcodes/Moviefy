@@ -28,6 +28,9 @@ function SearchResults(props) {
               <div className={styles.movie_details}>
                 <p>{movie.Title}</p>
                 <h5>Year: {movie.Year}</h5>
+                <h5 className={styles.type}>
+                  {movie.Type.charAt(0).toUpperCase() + movie.Type.slice(1)}
+                </h5>
               </div>
             </div>
           );

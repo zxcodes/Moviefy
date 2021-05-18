@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import no_data from "assets/SVGs/no_data.svg";
 import SearchResults from "components/SearchResults/SearchResults";
 import { GoMarkGithub } from "react-icons/go";
+
 function Home() {
   const [searchInput, setSearchInput] = useState("");
   const [movies, setMovies] = useState([]);
@@ -14,29 +15,31 @@ function Home() {
     if (searchInput !== "") {
       const data = await fetch(URL);
       const fetchedMovies = await data.json();
-      setMovies(fetchedMovies["Search"]);
+      setMovies(fetchedMovies.Search);
     }
   }
   if (movies.length === 0) {
     return (
       <div className={styles.wrapper}>
-        <span className={styles.span}>
+        <div className={styles.content_wrapper}>
           <div className={styles.header_wrapper}>
             <header>Moviefy</header>
             <a href="https://github.com/zxcodes/Moviefy">
               <GoMarkGithub className={styles.github} />
             </a>
           </div>
-          <form onSubmit={getMovies} id="movieInput">
+          <form onSubmit={getMovies}>
             <input
+              autoFocus
               required
               type="text"
               placeholder="Search for a movie..."
               value={searchInput}
+              id="movie_input"
               onChange={(e) => setSearchInput(e.target.value)}
             />
           </form>
-        </span>
+        </div>
         <div className={styles.no_data}>
           <img src={no_data} alt="No Data Logo" />
           <p>No data!</p>

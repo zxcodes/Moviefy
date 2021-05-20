@@ -6,8 +6,7 @@
   align-items: center;
 }
 .error img {
-  height: 100px;
-  width: 100px;
+  width: 80%;
   margin-bottom: 1em;
 }
 .span {
@@ -35,4 +34,24 @@
   padding: 0em 2em;
   margin: 1%;
   text-align: center;
+}
+@media (min-width: 600px) {
+  .error img {
+    width: 70%;
+  }
+  .error h3 {
+    font-size: 1.4em;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 900px) {
+  .error h3 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+  }
+  .error img {
+    width: 75%;
+  }
 }

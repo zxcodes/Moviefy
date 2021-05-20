@@ -35,7 +35,6 @@ function Home() {
               type="text"
               placeholder="Search for a movie..."
               value={searchInput}
-              id="movie_input"
               onChange={(e) => setSearchInput(e.target.value)}
             />
           </form>

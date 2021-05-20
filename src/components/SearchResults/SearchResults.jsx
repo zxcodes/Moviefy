@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SearchResults.module.css";
 import { FiChevronLeft } from "react-icons/fi";
+import error from "assets/SVGs/error.svg";
 function SearchResults(props) {
   return (
     <div className={styles.wrapper}>
@@ -9,21 +10,29 @@ function SearchResults(props) {
           <FiChevronLeft className={styles.back_button} />
           <a href="/">Home</a>
         </span>
-        <h1>
-          Search results for {""}
-          <span style={{ color: "Yellow" }} span="true">
-            {props.searchValue.charAt(0).toUpperCase() +
-              props.searchValue.slice(1)}
-          </span>
-          .{" "}
-        </h1>
-      </div>
+      </div>{" "}
+      <h1>
+        Search results for {""}
+        <span style={{ color: "Yellow" }} span="true">
+          {props.searchValue.charAt(0).toUpperCase() +
+            props.searchValue.slice(1)}
+        </span>
+        .
+      </h1>
       <div className={styles.results}>
         {props.data.map((movie, index) => {
           return (
             <div className={styles.movie_card} key={index}>
               <div className={styles.movie_poster}>
-                <img src={movie.Poster} alt="Movie Poster" />
+                <img
+                  src={movie.Poster}
+                  alt="Movie Poster"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src =
+                      "https://image.freepik.com/free-vector/404-found-vector-flat-concept-illustration_97231-125.jpg";
+                  }}
+                />
               </div>
               <div className={styles.movie_details}>
                 <p>{movie.Title}</p>

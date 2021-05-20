@@ -96,6 +96,9 @@ a {
   .wrapper h1 {
     margin: 0 auto;
   }
+  .movie_poster {
+    height: 450px;
+  }
   .movie_card {
     max-width: 330px;
   }

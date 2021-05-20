@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./SearchResults.module.css";
 import { FiChevronLeft } from "react-icons/fi";
-import error from "assets/SVGs/error.svg";
 function SearchResults(props) {
   return (
     <div className={styles.wrapper}>

@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: flex-start;
   height: auto;
-  /* border: 2px white solid; */
 }
 .back_btn_wrapper {
   display: flex;
@@ -43,14 +42,12 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* border: 2px white solid; */
 }
 .wrapper h1 {
   font-size: 1.4em;
   text-align: left;
   color: #fff;
   font-weight: 400;
-  /* border: 2px white solid; */
   margin-right: auto;
   margin-left: 45px;
 }

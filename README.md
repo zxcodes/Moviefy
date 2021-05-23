@@ -7,9 +7,6 @@
 > npm install
 > npm start
 ```
-# NPM Modules (Required):
-* react-error-boundnary
-* React Icons
 
 # Screenshots
 * Homepage
